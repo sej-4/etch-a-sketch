@@ -11,13 +11,8 @@ container.addEventListener("mouseover", (event) => {
   event.target.classList.add("fill-square");
 });
 
-function isValidInput(numberOfSquares) {
-  return (
-    numberOfSquares &&
-    numberOfSquares > 0 &&
-    numberOfSquares <= 100 &&
-    Number.isInteger(numberOfSquares)
-  );
+function isValidInput(number) {
+  return number && number > 0 && number <= 100 && Number.isInteger(number);
 }
 
 button.addEventListener("click", () => {
