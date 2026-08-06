@@ -11,10 +11,10 @@ function isValidInput(number) {
 
 function createGrid(numberOfSquares) {
   const gridSize = numberOfSquares ** 2;
-  const containerSize = container.offsetWidth;
-  const squareDimension = containerSize / numberOfSquares;
+  const containerDimension = container.offsetWidth;
+  const squareDimension = containerDimension / numberOfSquares;
 
-  for (let i = 0; i < numberOfSquares ** 2; i++) {
+  for (let i = 0; i < gridSize; i++) {
     const div = document.createElement("div");
     div.style.height = `${squareDimension}px`;
     div.style.width = `${squareDimension}px`;
