@@ -20,8 +20,12 @@ body {
 }
 
 .container div {
-  outline: 1px solid black;
+  border: 1px solid black;
   flex: auto;
   height: calc(500px / 16);
   width: calc(500px / 16);
+}
+
+.fill-square {
+  background-color: aqua;
 }
