@@ -13,8 +13,8 @@ body {
 }
 
 .container {
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
   outline: 2px solid black;
 
   display: flex;
@@ -24,8 +24,6 @@ body {
 .container div {
   border: 1px solid black;
   flex: auto;
-  height: calc(500px / 16);
-  width: calc(500px / 16);
 }
 
 .fill-square {

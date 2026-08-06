@@ -11,7 +11,8 @@ function isValidInput(number) {
 
 function createGrid(numberOfSquares) {
   const gridSize = numberOfSquares ** 2;
-  const squareDimension = 500 / numberOfSquares;
+  const containerSize = container.offsetWidth;
+  const squareDimension = containerSize / numberOfSquares;
 
   for (let i = 0; i < numberOfSquares ** 2; i++) {
     const div = document.createElement("div");
